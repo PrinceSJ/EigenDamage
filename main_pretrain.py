@@ -7,7 +7,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 from tqdm import tqdm
-from tensorboardX import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 from utils.network_utils import get_network
 from utils.data_utils import get_dataloader
 from utils.common_utils import PresetLRScheduler, makedirs
