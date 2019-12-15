@@ -1,0 +1,22 @@
+{
+  "exp_name": "circuit_unet++_kfacf_eigen_one_pass_",
+  "network": "unet_model",
+  "depth": 15,
+  "dataset": "circuit",
+  "batch_size": 1,
+  "epoch": "150, 150, 150",
+  "learning_rate": "1e-3, 1e-3, 1e-3",
+  "weight_decay": "1e-4, 1e-4, 1e-4",
+  "ratio": "0.4, 0.6, 0.8",
+  "fisher_mode": "eigen",
+  "fisher_type": "true",
+  "fix_layers": 0,
+  "checkpoint": "/home/mori/Programming/Net_Pruning/pytorch_Unet++/runs/200epoch/2019-12-09, 16:23:14_bce+dice/dice_best.pth",
+  "pruner": "kfac_eigen_pruner",
+  "normalize": false,
+  "prune_mode": "one_pass",
+  "prune_ratio_limit": 0.95,
+  "fix_rotation": false,
+  "re_init": false,
+  "use_patch": true
+}

@@ -5,7 +5,7 @@ import sys
 import torch
 import torch.optim as optim
 
-from models import VGG
+from models import VGG, UNet
 from pruner.fisher_diag_pruner import FisherDiagPruner
 from pruner.kfac_eigen_pruner import KFACEigenPruner
 from pruner.kfac_full_pruner import KFACFullPruner

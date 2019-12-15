@@ -13,7 +13,7 @@ from pruner.kfac_OBD_F2 import KFACOBDF2Pruner
 from pruner.kfac_OBS_F2 import KFACOBSF2Pruner
 from pruner.kfac_eigen_svd_pruner import KFACEigenSVDPruner
 
-from tensorboardX import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 from utils.common_utils import (get_config_from_json,
                                 get_logger,
                                 makedirs,
